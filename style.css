@@ -48,19 +48,19 @@ nav > div {
 
 
 section {
-    display: flex;
-    padding: 50px 250px;
-    justify-content: center;
+    margin: auto;
+    padding: 50px 0px;
 }
 
-
-main > :nth-child(even) {
-    background-color: #ffffff;
-    flex-direction: row;
+.container > div {
+    border: 2px dotted black;
 }
 
 main > :nth-child(odd) {
     background-color: #d3d3d3;
+}
+
+main > :nth-child(3) > div {
     flex-direction: row-reverse;
 }
 
@@ -72,14 +72,7 @@ main > :nth-child(odd) {
 .top.square {
     background-color: #ee82ee;
     width: 70%;
-    height: 200px;
     margin: auto;
-    border: 2px dotted black;
-}
-
-section > div {
-    border: 2px dotted black;
-    height: 300px;
 }
 
 .first {
@@ -92,12 +85,11 @@ section > div {
     flex-grow: 1;
 }
 
-.bottom {
-    background-color: green;
-    width: 1200px;
-    height: 550px;
-}
-
+.bottom.square {
+        background-color: green;
+        flex-grow: 1;
+    }
+    
 
 /* footer */
 
@@ -114,15 +106,8 @@ footer > * {
     display: flex;
     justify-content: center;
     margin: auto;
-    margin-bottom: 50px;
     width: 65%;
 
-}
-
-.container > div {
-    height: 300px;
-    border: 2px dotted black;
-    
 }
 
 .left {
@@ -152,7 +137,23 @@ footer > * {
 
 }
 
-.foot > div {
+.foot > * {
     background-color: #ffb6c1;
     border: 2px dotted black;
+    padding: 3px;
+}
+
+
+/* da eliminare dopo lo sviluppo */
+
+.bottom.square {
+    height: 550px;
+}
+
+.container > div {
+    height: 300px;
+}
+
+.top.square {
+    height: 200px;
 }
