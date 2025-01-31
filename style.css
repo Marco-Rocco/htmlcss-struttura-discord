@@ -69,7 +69,7 @@ main > :nth-child(odd) {
 }
 
 
-.top.container {
+.top.square {
     background-color: #ee82ee;
     width: 70%;
     height: 200px;
@@ -96,4 +96,38 @@ section > div {
     background-color: green;
     width: 1200px;
     height: 550px;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #23272a;
+    padding: 50px 250px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.container > div {
+    height: 300px;
+    border: 2px dotted black;
+}
+
+.left {
+    background-color: #f08080;
+    flex-grow: 1;
+}
+
+.right {
+    display: flex;
+    background-color: #20b2aa;
+    flex-grow: 2;
+}
+
+.right > div {
+    flex-grow: 1;
+    border: 2px dotted white;
 }
