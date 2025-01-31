@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+
+/* header */
+
+
 header { 
     background-color: #add8e6;
     padding: 15px;
@@ -39,11 +43,26 @@ nav > div {
     
 }
 
+
+/* main */
+
+
 section {
-    padding: 50px;
-    
+    display: flex;
+    padding: 50px 250px;
+    justify-content: center;
 }
 
+
+main > :nth-child(even) {
+    background-color: #ffffff;
+    flex-direction: row;
+}
+
+main > :nth-child(odd) {
+    background-color: #d3d3d3;
+    flex-direction: row-reverse;
+}
 
 #top {
     background-color: #00008b;
@@ -52,9 +71,29 @@ section {
 
 .top.container {
     background-color: #ee82ee;
-    width: 60%;
-    height: 400px;
+    width: 70%;
+    height: 200px;
     margin: auto;
     border: 2px dotted black;
 }
 
+section > div {
+    border: 2px dotted black;
+    height: 300px;
+}
+
+.first {
+    background-color: #1e90ff;
+    flex-grow: 1.5;
+}
+
+.second {
+    background-color: #ffc0cb;
+    flex-grow: 1;
+}
+
+.bottom {
+    background-color: green;
+    width: 1200px;
+    height: 550px;
+}
