@@ -33,10 +33,28 @@ ul {
 }
 
 nav > div {
-    border: 1px dotted black;
+    border: 2px dotted black;
     padding: 2px;
     flex-grow: 1;
-
+    
 }
 
+section {
+    padding: 50px;
+    
+}
+
+
+#top {
+    background-color: #00008b;
+}
+
+
+.top.container {
+    background-color: #ee82ee;
+    width: 60%;
+    height: 400px;
+    margin: auto;
+    border: 2px dotted black;
+}
 
