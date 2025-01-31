@@ -103,17 +103,26 @@ section > div {
 
 footer {
     background-color: #23272a;
-    padding: 50px 250px;
+    padding-top: 20px
 }
+
+footer > * {
+    margin: auto;
+}
+
 .container {
     display: flex;
     justify-content: center;
     margin: auto;
+    margin-bottom: 50px;
+    width: 65%;
+
 }
 
 .container > div {
     height: 300px;
     border: 2px dotted black;
+    
 }
 
 .left {
@@ -130,4 +139,20 @@ footer {
 .right > div {
     flex-grow: 1;
     border: 2px dotted white;
+}
+
+.foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #7fffd4;
+    margin-top: 25px;
+    width: 65%;
+    padding: 10px 0px;
+
+}
+
+.foot > div {
+    background-color: #ffb6c1;
+    border: 2px dotted black;
 }
